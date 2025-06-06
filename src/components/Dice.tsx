@@ -1,5 +1,4 @@
 import { useState } from 'react'
-import './Dice.css'
 
 interface DiceProps {
   onRoll: (number: number) => void
@@ -42,32 +41,48 @@ const Dice = ({ onRoll, isRolling }: DiceProps) => {
 
   return (
     <div 
-      className={`dice ${isRolling ? 'rolling' : ''} ${showNumber ? 'revealed' : ''}`}
+      className={`
+        w-30 h-30 bg-gradient-to-br from-gray-100 to-gray-300 
+        border-3 border-gray-800 rounded-2xl cursor-pointer 
+        flex items-center justify-center mx-auto my-5 
+        transition-all duration-300 shadow-lg select-none relative
+        hover:shadow-xl hover:-translate-y-1 hover:from-white hover:to-gray-200
+        active:translate-y-0 active:shadow-md
+        ${isRolling ? 'animate-spin pointer-events-none' : ''}
+      `}
       onClick={handleClick}
     >
-      <div className="dice-face">
+      <div className="w-full h-full flex items-center justify-center relative">
         {showNumber && rolledNumber ? (
           <>
             {rolledNumber === 10 ? (
-              <div className="ten-display">
-                <div className="ten-number">10</div>
+              <div className="flex items-center justify-center w-full h-full relative">
+                <div className="text-6xl font-bold text-gray-800 bg-gradient-to-r from-red-500 to-yellow-500 bg-clip-text text-transparent drop-shadow-md">
+                  10
+                </div>
               </div>
             ) : (
               <>
-                <div className="dots-container">
+                <div className="grid grid-cols-3 gap-2 w-20 h-20 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
                   {Array.from({ length: 9 }, (_, i) => (
                     <div
                       key={i}
-                      className={`dot ${getDotPattern(rolledNumber).includes(i + 1) ? 'active' : ''}`}
+                      className={`w-3 h-3 rounded-full transition-colors duration-300 ${
+                        getDotPattern(rolledNumber).includes(i + 1) 
+                          ? 'bg-gray-800 shadow-md' 
+                          : 'bg-transparent'
+                      }`}
                     />
                   ))}
                 </div>
-                <div className="number-display">{rolledNumber}</div>
+                <div className="absolute bottom-2 right-2 text-xl font-bold text-gray-600 bg-white/80 rounded-full w-6 h-6 flex items-center justify-center border border-gray-300">
+                  {rolledNumber}
+                </div>
               </>
             )}
           </>
         ) : (
-          <div className="dice-question">?</div>
+          <div className="text-5xl font-bold text-gray-600 drop-shadow-sm">?</div>
         )}
       </div>
     </div>

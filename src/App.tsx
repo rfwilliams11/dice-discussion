@@ -1,5 +1,4 @@
 import { useState } from "react";
-import "./App.css";
 import { TOPICS_DATA } from "./constants";
 import Dice from "./components/Dice";
 import TopicCard from "./components/TopicCard";
@@ -32,41 +31,46 @@ function App() {
   };
 
   return (
-    <>
-      <h1 style={{ marginBottom: "0px" }}>Dice Discussion</h1>
-      <div className="card">
-        <p style={{ marginBottom: "20px", color: "#666" }}>
-          Click the dice to roll a number (1-10) and get discussion topics!
-        </p>
+    <div className="min-h-screen bg-gray-50 py-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h1 className="text-4xl sm:text-5xl font-bold text-center text-gray-900 mb-0">
+          Dice Discussion
+        </h1>
+        
+        <div className="text-center py-8">
+          <p className="mb-5 text-gray-600 text-lg">
+            Click the dice to roll a number (1-10) and get discussion topics!
+          </p>
 
-        <Dice onRoll={handleDiceRoll} isRolling={isRolling} />
+          <Dice onRoll={handleDiceRoll} isRolling={isRolling} />
 
-        {topics && (
-          <div style={{ margin: "30px 0" }}>
-            <h3 style={{ textAlign: "center", marginBottom: "25px" }}>
-              Modern Web Discussion Topics
-            </h3>
-            <div className="topics-container">
-              <TopicCard
-                title="General"
-                content={topics.general}
-                colorClass="general"
-              />
-              <TopicCard
-                title="AI Focused"
-                content={topics.aiFocused}
-                colorClass="ai-focused"
-              />
-              <TopicCard
-                title="Rose or Thorn"
-                content={topics.roseThorn}
-                colorClass="rose-thorn"
-              />
+          {topics && (
+            <div className="mt-8">
+              <h3 className="text-center text-2xl font-semibold text-gray-800 mb-6">
+                Modern Web Discussion Topics
+              </h3>
+              <div className="flex flex-wrap gap-5 justify-center max-w-6xl mx-auto">
+                <TopicCard
+                  title="General"
+                  content={topics.general}
+                  colorClass="general"
+                />
+                <TopicCard
+                  title="AI Focused"
+                  content={topics.aiFocused}
+                  colorClass="ai-focused"
+                />
+                <TopicCard
+                  title="Rose or Thorn"
+                  content={topics.roseThorn}
+                  colorClass="rose-thorn"
+                />
+              </div>
             </div>
-          </div>
-        )}
+          )}
+        </div>
       </div>
-    </>
+    </div>
   );
 }
 
