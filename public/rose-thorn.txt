@@ -1,0 +1,10 @@
+"The Infinite Feedback Loop”: Describe a project where constant client feedback (or indecision) caused major scope creep, burnout, or circular design hell.
+"UI/UX Mess": Share the most nightmarish user interfaces you've encountered or inherited. What made them difficult? How did you fix?
+“Deploy and Destroy”: Tell the story of a deployment that went live and took something very important down with it—bonus points if it happened on a Friday.
+“Shadow Tech and Frankenstacks”: Reveal the most horrifying tech stack or undocumented system you inherited from a previous team. How did you make sense of it
+“When Everything Worked Locally…”: Share a time when your app worked perfectly in dev or staging, only to fall apart in prod. What was the hidden gotcha?
+“The MVP Glow-Up”: Tell the story of a client MVP that launched with modest expectations but grew into something far more impactful than anyone expected.
+“Code That Lived”: What’s the most robust or reusable code you’ve ever written for a client? Share the proudest moment where it just worked™ across projects or years.
+“The Unexpected Performance Boost”: Describe a time when a small refactor or optimization resulted in a massive speed gain or cost savings.
+“Client Collaboration Magic”: What’s the best collaboration experience you’ve had with a client? What made it unusually smooth, productive, or fun?
+“Automation All-Star”: What’s an automation (CI/CD pipeline, testing, deployment, codegen, etc.) you introduced that saved your team hours or reduced errors?

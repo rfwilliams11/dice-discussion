@@ -1,0 +1,10 @@
+"AI Pair Programming Experiences": Share stories of working with AI coding assistants like GitHub Copilot or Claude Code—what's been surprisingly helpful and what's been frustrating?
+"Prompt Engineering Show & Tell": Have members bring their best prompts for generating code, tests, or documentation and discuss techniques for getting optimal results.
+"The Human Touch": Discuss which aspects of web development still require human expertise despite advances in AI, and which ones are being transformed.
+"AI-Generated Design Systems": Explore how generative AI is changing the way design systems are created and maintained—benefits, challenges, and best practices.
+"Client Education": How do you explain AI capabilities and limitations to those who've seen the hype but don't understand the reality of what's possible?
+"Responsible AI Integration": Discuss "gotchas" and other considerations when implementing AI features in client projects—privacy, bias, transparency, and user trust.
+"AI Workflow Revolution": Share how generative AI has changed your development workflow and processes—what's better, what's worse, and what's just different?
+"Future-Proofing Web Careers": Discuss how web developers and designers can stay relevant and valuable in an increasingly AI-assisted industry.
+“AI in the Wild: Client Expectations vs. Reality”: Share experiences where clients wanted to integrate AI into their products or workflows. What were their goals, and how realistic were they?
+“Productivity Wins: Real Gains from AI in the Dev Workflow”: What concrete productivity improvements have you seen from using AI tools in your day-to-day development?
