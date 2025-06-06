@@ -10,13 +10,11 @@ interface Topics {
 }
 
 function App() {
-  // const [randomNumber, setRandomNumber] = useState<number | null>(null);
   const [topics, setTopics] = useState<Topics | null>(null);
   const [isRolling, setIsRolling] = useState(false);
 
   const handleDiceRoll = (number: number): void => {
     setIsRolling(true);
-    // setRandomNumber(number);
 
     setTopics({
       general: TOPICS_DATA.general[number - 1],
@@ -34,7 +32,7 @@ function App() {
     <div className="min-h-screen bg-gray-50 py-8">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h1 className="text-4xl sm:text-5xl font-bold text-center text-gray-900 mb-0">
-          Dice Discussion
+          Modern Web Discussion
         </h1>
 
         <div className="text-center py-8">
@@ -47,7 +45,7 @@ function App() {
           {topics && (
             <div className="mt-8">
               <h3 className="text-center text-2xl font-semibold text-gray-800 mb-6">
-                Modern Web Discussion Topics
+                Discussion Topics
               </h3>
               <div className="flex flex-wrap gap-5 justify-center max-w-6xl mx-auto">
                 <TopicCard
