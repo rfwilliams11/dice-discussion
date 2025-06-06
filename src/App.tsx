@@ -10,13 +10,13 @@ interface Topics {
 }
 
 function App() {
-  const [randomNumber, setRandomNumber] = useState<number | null>(null);
+  // const [randomNumber, setRandomNumber] = useState<number | null>(null);
   const [topics, setTopics] = useState<Topics | null>(null);
   const [isRolling, setIsRolling] = useState(false);
 
   const handleDiceRoll = (number: number): void => {
     setIsRolling(true);
-    setRandomNumber(number);
+    // setRandomNumber(number);
 
     setTopics({
       general: TOPICS_DATA.general[number - 1],
@@ -36,7 +36,7 @@ function App() {
         <h1 className="text-4xl sm:text-5xl font-bold text-center text-gray-900 mb-0">
           Dice Discussion
         </h1>
-        
+
         <div className="text-center py-8">
           <p className="mb-5 text-gray-600 text-lg">
             Click the dice to roll a number (1-10) and get discussion topics!
