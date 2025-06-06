@@ -8,18 +8,18 @@ A simple web app that generates discussion topics for teams by rolling a virtual
 
 ## 🚀 Running Locally
 
-1. 📥 Clone the repository
-2. 📦 Install dependencies:
+1. Clone the repository
+2. Install dependencies:
    ```bash
    npm install
    ```
-3. ⚡ Start the development server:
+3. Start the development server:
    ```bash
    npm run dev
    ```
-4. 🌐 Open your browser and navigate to the URL shown in the terminal (typically `http://localhost:5173`)
+4. Open your browser and navigate to the URL shown in the terminal (typically `http://localhost:5173`)
 
-## 🏗️ Building for Production
+## Building for Production
 
 ```bash
 npm run build
